@@ -1,0 +1,10 @@
+int64 id 
+uint8 relation
+uint8 unknown=0
+uint8 lane_keeping=1
+uint8 change_left=2
+uint8 change_right=3
+uint8 adjacent_left=4
+uint8 adjacent_right=5
+uint8 conflict=6
+uint8 area=7

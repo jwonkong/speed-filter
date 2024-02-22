@@ -1,0 +1,11 @@
+std_msgs/Header header
+int64 id
+float64[] state
+string[] state_descriptor
+float64[] covariance
+time initial_time
+time update_time
+float64 update_count
+float64[] gate
+uint8 status
+uint8 model

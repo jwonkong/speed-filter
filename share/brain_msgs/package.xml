@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>brain_msgs</name>
+  <version>0.0.8</version>
+  <description>The brain_msgs package</description>
+
+  <maintainer email="seongjin.lee@acelab.ai">seongjin</maintainer>
+
+  <license>ACELAB</license>
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <build_depend condition="$ROS_VERSION == 1">roscpp</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">rospy</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">std_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">nav_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">geometry_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">message_generation</build_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">roscpp</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">rospy</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">std_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">nav_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">geometry_msgs</build_export_depend>
+  <exec_depend condition="$ROS_VERSION == 1">roscpp</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">rospy</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">std_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">nav_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">geometry_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
+
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">rosidl_default_generators</buildtool_depend>
+  <exec_depend condition="$ROS_VERSION == 2">builtin_interfaces</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">rosidl_default_generators</exec_depend>
+  <member_of_group condition="$ROS_VERSION == 2">rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export>
+
+</package>
