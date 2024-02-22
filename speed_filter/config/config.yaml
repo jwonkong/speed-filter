@@ -1,0 +1,27 @@
+object_processor:
+  vehicle_parameters:
+    wheel_base: 2.97
+    track_width: 2.5
+    distance_from_cg_to_front_axle: 1.47
+    time_step: 0.05
+    cornering_stiffness_front: 100000
+    cornering_stiffness_rear: 80000
+    yaw_inertia: 3954.288
+    vehicle_mass: 2108
+    steering_ratio: 20
+
+  topics:
+    vehicle_state: "/vehicle_state"
+    objects: "/objects"
+    collision_info: "/collision_info"
+
+command_selector:
+  parameters:
+    distance_object_to_line: 4
+    velocity_limit: 13.8
+
+  topics:
+    vehicle_state: "/vehicle_state"
+    command_longitudinal_input: "/command/longitudinal/input"
+    collision_info: "/collision_info"
+    command_longitudinal_output: "/command/longitudinal"

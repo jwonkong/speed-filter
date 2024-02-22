@@ -1,0 +1,8 @@
+<launch>
+  <!-- Launch parameters -->  
+  <rosparam file="$(find speed_filter)/config/config.yaml" command="load" ns="config" />
+
+  <!-- Launch node -->
+  <node name="object_processor" pkg="speed_filter" type="object_processor" output="screen" />
+  <node name="command_selector" pkg="speed_filter" type="command_selector" output="screen" />
+</launch>
